@@ -1,0 +1,10 @@
+#==========------------===========
+#         Mobs Progress.
+#    This file counts for
+# <Advancement> [Monsters Hunted]
+#==========------------===========
+
+#List of mobs killed by players <CANNOT BE MODIFIED>.
+MobsFound: []
+#Mobs counter by players. <This is linked to the list, but can be modified> N/36 mobs.
+Counter: 0

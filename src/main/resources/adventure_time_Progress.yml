@@ -1,0 +1,10 @@
+#==========------------===========
+#       Biomes Progress.
+#     This file counts for
+# <Advancement> [Adventure Time]
+#==========------------===========
+
+#List of biomes found by players <CANNOT BE MODIFIED>.
+BiomesFound: []
+#Biome counter by players. <This is linked to the list, but can be modified> N/53 biomes.
+Counter: 0

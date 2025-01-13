@@ -1,0 +1,11 @@
+name: AdvancementsTogether
+version: '1.0'
+main: org.example.harry.advancementsTogether.Main
+api-version: '1.21'
+author: HarryGamer123
+
+commands:
+  advtogether:
+    description: Comando Principal de AdvancementsTogether
+    aliases:
+      - advancementtogether

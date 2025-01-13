@@ -1,0 +1,10 @@
+#==========------------===========
+#       Animals Progress.
+#     This file counts for
+# <Advancement> [A Balanced Diet]
+#==========------------===========
+
+#List of items consumed by players <CANNOT BE MODIFIED>.
+ItemsConsumed: []
+#Items counter. <This is linked to the list, but can be modified> N/40 Items Consumed.
+Counter: 0

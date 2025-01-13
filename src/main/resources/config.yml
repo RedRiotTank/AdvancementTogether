@@ -1,0 +1,104 @@
+#=====================------------------------------------------------=====================
+#                           Config Advancement Together.
+#                               By: GoodNightHarry
+#
+# Thanks for download my first plugin, reports bugs or betters in spigot community
+#
+#                            Variables that can be used:
+# %player% / %server_name% / %advancement% / %biome% / %mob% / %item% / %animal% / %world%
+#=====================------------------------------------------------=====================
+
+Config:
+
+  #==========----------===========
+  #          Configs.
+  #==========----------===========
+
+  #worlds where count the biomes and advancements
+  Worlds:
+    overworld: world
+    nether: world_nether
+    the_end: world_the_end
+
+  #==========----------===========
+  #          Messages.
+  #     Colored format - &e &l
+  #==========----------===========
+
+  #can use %server_name% for import prefix in the messages
+  Prefix: "&8[ &5Adv&aTogether &8] "
+
+  Welcome_message:
+    #can use %player% / %server_name% / %world%.
+    enabled: true
+    message:
+      - "&8--------------------------------"
+      - ""
+      - "&6¡Welcome &b%player%! to %server_name%"
+      - ""
+      - "&8--------------------------------"
+
+  #can use %player% / %advancement% / %server_name% / %world%.
+  Obtain_advancement_message:
+    achievement_obtained: "&eCongratulations you got the achievement: &a[%advancement%]"
+    achievement_obtained_message: true
+    # Spigot page for all sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+    achievement_sound_obtained: "BLOCK_NOTE_BLOCK_BELL"
+    # Spigot page for all particles: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    achievement_particle_obtained: "HAPPY_VILLAGER"
+    achievement_obtained_action_bar: "&eAchievement completed &a[%advancement%]"
+    action_bar_message: true
+
+  # [Adventure Time]
+  #can use %player% / %biome% / %server_name% / %world%.
+  Biomes_found:
+    biomes_found: true
+    biomes_found_message: "&aNew biome has been found: &b%biome%"
+
+  # [Monters Hunted]
+  #can use %player% / %mob% / %server_name% / %world%.
+  Mobs_found:
+    mobs_found: true
+    mobs_found_message: "&aNew mob has been found: &5%mob%"
+
+  # [Two By Two]
+  #can use %player% / %animal% / %server_name% / %world%.
+  Animals_reproduced:
+    animals_found: true
+    animals_found_message: "&aNew animal has been reproduced: &b%animal%"
+
+  # [A Balanced Diet]
+  #can use %player% / %item% / %server_name% / %world%.
+  Items_consume:
+    items_found: true
+    items_found_message: "&aNew item has been consumed: &6%item%"
+
+  #==========----------===========
+  #     Advancement Custom.
+  #           Welcome.
+  #==========----------===========
+  Achievement_display_welcome:
+    enabled: true
+
+    #can use %player% / %server_name% / %world%.
+    #only can use color name: https://www.spigotmc.org/wiki/textcosmetics-colors-and-formats/
+    title: "&f&l¡Welcome, &6%player%!"
+    description: "&5&kd &a¡Thanks for playing &5&kd &6%player%!"
+
+    # FRAME: can use <goal>/<challenge>/<advancement>
+    frame: "goal"
+
+    # way to add item <ITEM/BLOCK>, example: "AXOLOTL_BUCKET". spigot page for all materials:
+    # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+    icon: "AXOLOTL_BUCKET"
+
+    # way to add block background: <BLOCK>, example: "BLACK_CONCRETE_POWDER". spigot page for all blocks:
+    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html
+    background: "BLACK_CONCRETE_POWDER"
+
+  Command_messages:
+    command_reload: "&eThe configuration was reloaded"
+    command_get_biomes: "&eDiscovered Biomes: "
+    command_get_mobs: "&eDiscovered Mobs: "
+    command_get_animals: "&eAnimals Reproduced: "
+    command_get_items: "&eItems Consumed: "

@@ -1,0 +1,10 @@
+#==========------------===========
+#       Animals Progress.
+#     This file counts for
+# <Advancement> [Two By Two]
+#==========------------===========
+
+#List of breeding animals by players <CANNOT BE MODIFIED>.
+AnimalsReproduced: []
+#Animals counter. <This is linked to the list, but can be modified> N/25 Animals.
+Counter: 0
