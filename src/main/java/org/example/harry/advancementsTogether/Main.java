@@ -91,7 +91,7 @@ public final class Main extends JavaPlugin {
     public void registerEvents(){
         getServer().getPluginManager().registerEvents(new PlayerListeners(this, advancementsUtils),this);
         getServer().getPluginManager().registerEvents(new BiomeListeners(this,biomeManager),this);
-        getServer().getPluginManager().registerEvents(new MobsListeners(this,mobsManager),this);
+        getServer().getPluginManager().registerEvents(new MobsListeners(mainConfigManager, mobsManager),this);
     }
 
     public MainConfigManager getMainConfigManager() {
